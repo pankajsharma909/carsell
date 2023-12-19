@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Connect to MongoDB
-mongoose.connect('mongokey', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://mrpankaj707:rzAWIBFGIrwuE4PR@cluster0.ai2ibdj.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 // Create a user schema
